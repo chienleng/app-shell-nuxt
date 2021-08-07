@@ -1,4 +1,5 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme')
+// const colours = require('tailwindcss/colors')
 
 module.exports = {
   mode: 'jit',
@@ -7,21 +8,21 @@ module.exports = {
     './layouts/**/*.vue',
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
-    './nuxt.config.{js,ts}',
+    './nuxt.config.{js,ts}'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans]
+        sans: ['Inter', ...defaultTheme.fontFamily.sans]
       }
-    },
+    }
   },
   variants: {
-    extend: {},
+    extend: {}
   },
   plugins: [
-    require("@tailwindcss/ui"),
+    require('@tailwindcss/ui'),
     require('@tailwindcss/forms')
-  ],
+  ]
 }
